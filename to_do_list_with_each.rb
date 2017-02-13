@@ -31,19 +31,19 @@ class Todo
   end
 end
 
-todo1 = Todo.new("Buy milk")
-todo2 = Todo.new("Clean room")
-todo3 = Todo.new("Go to gym")
+# todo1 = Todo.new("Buy milk")
+# todo2 = Todo.new("Clean room")
+# todo3 = Todo.new("Go to gym")
 
-puts todo1
-puts todo2
-puts todo3
+# puts todo1
+# puts todo2
+# puts todo3
 
-todo1.done!
+# todo1.done!
 
-puts todo1
-puts todo2
-puts todo3
+# puts todo1
+# puts todo2
+# puts todo3
 
 # [X] Buy milk
 # [ ] Clean room
@@ -116,9 +116,13 @@ class TodoList
   def each
     counter = 0
 
-    while counter < @todo.size
-      
+    while counter < @todos.size
+      yield(@todos[counter])
+
+      counter += 1
     end
+
+    @todos
   end
 end
 
@@ -130,6 +134,9 @@ list = TodoList.new("Today's Todos")
 list.add(todo1)
 list.add(todo2)
 list.add(todo3)
+
+todo1.done!
+
 
 list.each do |todo|
   puts todo                   # calls Todo#to_s
