@@ -106,6 +106,12 @@ class TodoListTest < MiniTest::Test
     assert_equal(true, @list.done?)
   end
 
+  def test_mark_all_done
+    assert_equal(false, @list.done?)
+    @list.mark_all_done
+    assert_equal(true, @list.done?)
+  end
+
   def test_remove_at
     assert_raises(IndexError) { @list.remove_at(100) }
     @list.remove_at(0)
@@ -169,6 +175,13 @@ class TodoListTest < MiniTest::Test
 
     @todo2.done!
     assert_equal([@todo1, @todo2], @list.select {|todo| todo.done?}.to_a )
+
+    @todo3.done!
+    assert_equal(@todos, @list.select {|todo| todo.done?}.to_a)
+  end
+
+  def test_title
+    assert_equal("Today's Todos", @list.title)
   end
 end
 
