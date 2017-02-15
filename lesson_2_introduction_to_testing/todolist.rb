@@ -80,12 +80,13 @@ class TodoList
   end
 
   def remove_at(index)
-    p @todos.delete_at(index)
+    p @todos.delete(item_at(index))
   end
 
   def to_s
-    "---- #{title} ----\n" + @todos.map(&:to_s).join("\n")
-  end
+    text = "---- #{title} ----\n"
+    text << @todos.map(&:to_s).join("\n")
+    text  end
 
   def to_a
     @todos
@@ -135,26 +136,19 @@ class TodoList
   def mark_all_done
     each { |todo| todo.done! }
   end
+  alias_method :done!, :mark_all_done
 
   def mark_all_undone
     each { |todo| todo.undone! }
   end
+
+  def ==(other_todolist)
+    self.to_a == other_todolist.to_a
+  end
+
+
+  def done?
+    self == all_done
+  end
+
 end
-
-
-todo1 = Todo.new("Buy milk")
-todo2 = Todo.new("Clean room")
-todo3 = Todo.new("Go to gym")
-
-list = TodoList.new("Today's Todos")
-list.add(todo1)
-list.add(todo2)
-list.add(todo3)
-
-todo1.done!
-
-puts list
-
-results = list.select { |todo| todo.done? }    # you need to implement this method
-
-puts results.inspect
