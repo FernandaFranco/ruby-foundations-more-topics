@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-14T19:23:50-05:00">2017-02-14T19:23:50-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-15T12:10:21-05:00">2017-02-15T12:10:21-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         8.9
+         10.7
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>77</td>
         <td>73</td>
         <td>4</td>
-        <td>8.9</td>
+        <td>10.7</td>
       </tr>
       
     </tbody>
@@ -156,20 +156,20 @@
           <code class="ruby">  def initialize(title, description=&#39;&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="65" data-linenumber="12">
-          <span class="hits">65</span>
+        <li class="covered" data-hits="71" data-linenumber="12">
+          <span class="hits">71</span>
           
           <code class="ruby">    @title = title</code>
         </li>
       
-        <li class="covered" data-hits="65" data-linenumber="13">
-          <span class="hits">65</span>
+        <li class="covered" data-hits="71" data-linenumber="13">
+          <span class="hits">71</span>
           
           <code class="ruby">    @description = description</code>
         </li>
       
-        <li class="covered" data-hits="65" data-linenumber="14">
-          <span class="hits">65</span>
+        <li class="covered" data-hits="71" data-linenumber="14">
+          <span class="hits">71</span>
           
           <code class="ruby">    @done = false</code>
         </li>
@@ -192,8 +192,8 @@
           <code class="ruby">  def done!</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="18">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="17" data-linenumber="18">
+          <span class="hits">17</span>
           
           <code class="ruby">    self.done = true</code>
         </li>
@@ -216,8 +216,8 @@
           <code class="ruby">  def done?</code>
         </li>
       
-        <li class="covered" data-hits="33" data-linenumber="22">
-          <span class="hits">33</span>
+        <li class="covered" data-hits="42" data-linenumber="22">
+          <span class="hits">42</span>
           
           <code class="ruby">    done</code>
         </li>
@@ -312,14 +312,14 @@
           <code class="ruby">  def initialize(title)</code>
         </li>
       
-        <li class="covered" data-hits="27" data-linenumber="38">
-          <span class="hits">27</span>
+        <li class="covered" data-hits="32" data-linenumber="38">
+          <span class="hits">32</span>
           
           <code class="ruby">    @title = title</code>
         </li>
       
-        <li class="covered" data-hits="27" data-linenumber="39">
-          <span class="hits">27</span>
+        <li class="covered" data-hits="32" data-linenumber="39">
+          <span class="hits">32</span>
           
           <code class="ruby">    @todos = []</code>
         </li>
@@ -348,8 +348,8 @@
           <code class="ruby">  def add(chore)</code>
         </li>
       
-        <li class="covered" data-hits="74" data-linenumber="44">
-          <span class="hits">74</span>
+        <li class="covered" data-hits="86" data-linenumber="44">
+          <span class="hits">86</span>
           
           <code class="ruby">    raise TypeError, &#39;can only add Todo objects&#39; unless chore.instance_of? Todo</code>
         </li>
@@ -360,8 +360,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="72" data-linenumber="46">
-          <span class="hits">72</span>
+        <li class="covered" data-hits="84" data-linenumber="46">
+          <span class="hits">84</span>
           
           <code class="ruby">    @todos &lt;&lt; chore</code>
         </li>
@@ -585,7 +585,7 @@
         <li class="covered" data-hits="2" data-linenumber="83">
           <span class="hits">2</span>
           
-          <code class="ruby">    p @todos.delete(item_at(index))</code>
+          <code class="ruby">    @todos.delete(item_at(index))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="84">
@@ -636,8 +636,8 @@
           <code class="ruby">  def to_a</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="92">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="20" data-linenumber="92">
+          <span class="hits">20</span>
           
           <code class="ruby">    @todos</code>
         </li>
@@ -660,8 +660,8 @@
           <code class="ruby">  def each</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="96">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="13" data-linenumber="96">
+          <span class="hits">13</span>
           
           <code class="ruby">    counter = 0</code>
         </li>
@@ -672,14 +672,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="98">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="13" data-linenumber="98">
+          <span class="hits">13</span>
           
           <code class="ruby">    while counter &lt; @todos.size</code>
         </li>
       
-        <li class="covered" data-hits="27" data-linenumber="99">
-          <span class="hits">27</span>
+        <li class="covered" data-hits="39" data-linenumber="99">
+          <span class="hits">39</span>
           
           <code class="ruby">      yield(@todos[counter])</code>
         </li>
@@ -690,8 +690,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="27" data-linenumber="101">
-          <span class="hits">27</span>
+        <li class="covered" data-hits="39" data-linenumber="101">
+          <span class="hits">39</span>
           
           <code class="ruby">      counter += 1</code>
         </li>
@@ -708,8 +708,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="104">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="13" data-linenumber="104">
+          <span class="hits">13</span>
           
           <code class="ruby">    self</code>
         </li>
@@ -756,20 +756,20 @@
           <code class="ruby">  def select</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="112">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="112">
+          <span class="hits">8</span>
           
           <code class="ruby">    selected_list = TodoList.new(title)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="113">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="113">
+          <span class="hits">8</span>
           
           <code class="ruby">    each do |todo|</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="114">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="24" data-linenumber="114">
+          <span class="hits">24</span>
           
           <code class="ruby">      selected_list &lt;&lt; todo if yield(todo)</code>
         </li>
@@ -786,8 +786,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="117">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="117">
+          <span class="hits">8</span>
           
           <code class="ruby">    selected_list</code>
         </li>
@@ -834,8 +834,8 @@
           <code class="ruby">  def all_done</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="125">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="20" data-linenumber="125">
+          <span class="hits">20</span>
           
           <code class="ruby">    select { |todo| todo.done? }</code>
         </li>
@@ -906,8 +906,8 @@
           <code class="ruby">  def mark_all_done</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="137">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="12" data-linenumber="137">
+          <span class="hits">12</span>
           
           <code class="ruby">    each { |todo| todo.done! }</code>
         </li>
@@ -960,8 +960,8 @@
           <code class="ruby">  def ==(other_todolist)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="146">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="146">
+          <span class="hits">6</span>
           
           <code class="ruby">    self.to_a == other_todolist.to_a</code>
         </li>
@@ -990,8 +990,8 @@
           <code class="ruby">  def done?</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="151">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="151">
+          <span class="hits">5</span>
           
           <code class="ruby">    self == all_done</code>
         </li>
